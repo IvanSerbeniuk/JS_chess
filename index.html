@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <script type="module" src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Chess</h1>
+
+    <div class="chess_board">
+
+      <div class="navig_chess_container_abc">
+        <div class="navig_chess abc null"> </div>
+
+        <div class="navig_chess abc"> A</div>
+        <div class="navig_chess abc"> B</div>
+        <div class="navig_chess abc"> C</div>
+        <div class="navig_chess abc"> D</div>
+        <div class="navig_chess abc"> E</div>
+        <div class="navig_chess abc"> F</div>
+        <div class="navig_chess abc"> G</div>
+        <div class="navig_chess abc"> H</div>
+      </div>
+
+      <div class="navig_num_wrap">
+        <div class="navig_chess_container_num">
+          <div class="navig_chess num"> 1</div>
+          <div class="navig_chess num"> 2</div>
+          <div class="navig_chess num"> 3</div>
+          <div class="navig_chess num"> 4</div>
+          <div class="navig_chess num"> 5</div>
+          <div class="navig_chess num"> 6</div>
+          <div class="navig_chess num"> 7</div>
+          <div class="navig_chess num"> 8</div>
+        </div>
+
+        <div class="container_chess">
+          <div class="row_chess">
+            <div class="square_chess grey" data-row="0"  data-col="0"      data-abc="A" data-num="0">1 </div>
+            <div class="square_chess"      data-row="0"  data-col="1"      data-abc="B" data-num="0">2</div>
+            <div class="square_chess grey" data-row="0"  data-col="2"      data-abc="C" data-num="0">3</div>
+            <div class="square_chess"      data-row="0"  data-col="3"      data-abc="D" data-num="0">4</div>
+            <div class="square_chess grey" data-row="0"  data-col="4"      data-abc="E" data-num="0">5</div>
+            <div class="square_chess"      data-row="0"  data-col="5"      data-abc="F" data-num="0">6</div>
+            <div class="square_chess grey" data-row="0"  data-col="6"      data-abc="G" data-num="0">7</div>
+            <div class="square_chess"      data-row="0"  data-col="7"      data-abc="H" data-num="0">8</div>
+          </div>
+          <div class="row_chess">
+            <div class="square_chess "     data-row="1"  data-col="0"     data-abc="A" data-num="1">9</div>
+            <div class="square_chess grey" data-row="1"  data-col="1"     data-abc="B" data-num="1">10</div>
+            <div class="square_chess "     data-row="1"  data-col="2"     data-abc="C" data-num="1">11</div>
+            <div class="square_chess grey" data-row="1"  data-col="3"     data-abc="D" data-num="1">12</div>
+            <div class="square_chess"      data-row="1"  data-col="4"     data-abc="E" data-num="1">13 </div>
+            <div class="square_chess grey" data-row="1"  data-col="5"     data-abc="F" data-num="1">14</div>
+            <div class="square_chess"      data-row="1"  data-col="6"     data-abc="G" data-num="1">15</div>
+            <div class="square_chess grey" data-row="1"  data-col="7"     data-abc="H" data-num="1">16</div>
+          </div">
+          <div class="row_chess">
+            <div class="square_chess grey"     data-row="2"  data-col="0"     data-abc="A" data-num="1">17</div>
+            <div class="square_chess "         data-row="2"  data-col="1"     data-abc="B" data-num="1">18</div>
+            <div class="square_chess grey"     data-row="2"  data-col="2"     data-abc="C" data-num="1">19</div>
+            <div class="square_chess "         data-row="2"  data-col="3"     data-abc="D" data-num="1">20</div>
+            <div class="square_chess grey"     data-row="2"  data-col="4"     data-abc="E" data-num="1">21 </div>
+            <div class="square_chess "         data-row="2"  data-col="5"     data-abc="F" data-num="1">22</div>
+            <div class="square_chess grey"     data-row="2"  data-col="6"     data-abc="G" data-num="1">23</div>
+            <div class="square_chess "         data-row="2"  data-col="7"     data-abc="H" data-num="1">24</div>
+          </div">
+          <div class="row_chess">
+            <div class="square_chess "     data-row="3" data-col="0"     data-abc="A" data-num="1">25</div>
+            <div class="square_chess grey" data-row="3" data-col="1"     data-abc="B" data-num="1">26</div>
+            <div class="square_chess "     data-row="3" data-col="2"     data-abc="C" data-num="1">27</div>
+            <div class="square_chess grey" data-row="3" data-col="3"     data-abc="D" data-num="1">28</div>
+            <div class="square_chess"      data-row="3" data-col="4"     data-abc="E" data-num="1">29 </div>
+            <div class="square_chess grey" data-row="3" data-col="5"     data-abc="F" data-num="1">30</div>
+            <div class="square_chess"      data-row="3" data-col="6"     data-abc="G" data-num="1">31</div>
+            <div class="square_chess grey" data-row="3" data-col="7"     data-abc="H" data-num="1">32</div>
+          </div">
+          <div class="row_chess">
+            <div class="square_chess grey"     data-row="4" data-col="0"     data-abc="A" data-num="1">33</div>
+            <div class="square_chess "         data-row="4" data-col="1"     data-abc="B" data-num="1">34</div>
+            <div class="square_chess grey"     data-row="4" data-col="2"     data-abc="C" data-num="1">35</div>
+            <div class="square_chess "         data-row="4" data-col="3"     data-abc="D" data-num="1">36</div>
+            <div class="square_chess grey"     data-row="4" data-col="4"     data-abc="E" data-num="1">37 </div>
+            <div class="square_chess "         data-row="4" data-col="5"     data-abc="F" data-num="1">38</div>
+            <div class="square_chess grey"     data-row="4" data-col="6"     data-abc="G" data-num="1">39</div>
+            <div class="square_chess "         data-row="4" data-col="7"     data-abc="H" data-num="1">40</div>
+          </div">
+        <div class="row_chess">
+          <div class="square_chess "     data-row="5" data-col="0"     data-abc="A" data-num="1">41</div>
+          <div class="square_chess grey" data-row="5" data-col="1"     data-abc="B" data-num="1">42</div>
+          <div class="square_chess "     data-row="5" data-col="2"     data-abc="C" data-num="1">43</div>
+          <div class="square_chess grey" data-row="5" data-col="3"     data-abc="D" data-num="1">44</div>
+          <div class="square_chess"      data-row="5" data-col="4"     data-abc="E" data-num="1">45 </div>
+          <div class="square_chess grey" data-row="5" data-col="5"     data-abc="F" data-num="1">46</div>
+          <div class="square_chess"      data-row="5" data-col="6"     data-abc="G" data-num="1">47</div>
+          <div class="square_chess grey" data-row="5" data-col="7"     data-abc="H" data-num="1">48</div>
+        </div>
+        <div class="row_chess">
+          <div class="square_chess grey"     data-row="6" data-col="0"     data-abc="A" data-num="1">49</div>
+          <div class="square_chess "         data-row="6" data-col="1"     data-abc="B" data-num="1">50</div>
+          <div class="square_chess grey"     data-row="6" data-col="2"     data-abc="C" data-num="1">51</div>
+          <div class="square_chess "         data-row="6" data-col="3"     data-abc="D" data-num="1">52</div>
+          <div class="square_chess grey"     data-row="6" data-col="4"     data-abc="E" data-num="1">53 </div>
+          <div class="square_chess "         data-row="6" data-col="5"     data-abc="F" data-num="1">54</div>
+          <div class="square_chess grey"     data-row="6" data-col="6"     data-abc="G" data-num="1">55</div>
+          <div class="square_chess "         data-row="6" data-col="7"     data-abc="H" data-num="1">56</div> 
+      </div>
+      <div class="row_chess"> 
+        <div class="square_chess "     data-row="7" data-col="0"     data-abc="A" data-num="1">57</div>
+        <div class="square_chess grey" data-row="7" data-col="1"     data-abc="B" data-num="1">58</div>
+        <div class="square_chess "     data-row="7" data-col="2"     data-abc="C" data-num="1">59</div>
+        <div class="square_chess grey" data-row="7" data-col="3"     data-abc="D" data-num="1">60</div>
+        <div class="square_chess"      data-row="7" data-col="4"     data-abc="E" data-num="1">61 </div>
+        <div class="square_chess grey" data-row="7" data-col="5"     data-abc="F" data-num="1">62</div>
+        <div class="square_chess"      data-row="7" data-col="6"     data-abc="G" data-num="1">63</div>
+        <div class="square_chess grey" data-row="7" data-col="7"     data-abc="H" data-num="1">64</div>
+      </div>
+    </div>
+  </div>
+
+<style>
+  .square_chess.selected {
+      background-color: rgba(255, 255, 0, 0.3);
+      box-shadow: inset 0 0 10px yellow;
+  }
+
+
+  .navig_chess_container_abc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 912px;
+    flex-direction: row;
+  }
+  .navig_chess_container_num{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .grey{
+    background-color:  rgb(229, 237, 244);
+  }
+
+  .square_chess {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .square_chess img{
+    width: 80px;
+  }
+  .abc{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .num{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .chess_board{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navig_num_wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .row_chess{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 811px;
+  }
+  .container_chess{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: min-content;
+  }
+</style>
+</body>
+</html>
