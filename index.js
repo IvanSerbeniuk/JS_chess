@@ -7,8 +7,3 @@ game.start(); // Отрисовка доски
 
 
 
-// Дополнительно: загрузка сохранённой игры
-// window.addEventListener('DOMContentLoaded', () => {
-//     let savedGame = localStorage.getItem('chessGame');
-//     if (savedGame) game.loadState(JSON.parse(savedGame));
-// });
